@@ -32,13 +32,19 @@ public class ChessMatch {
 	}
 	
 	public void initialSetup() { //Init pieces for ChessMatch
-		placeNewPiece('b', 6, new Rook(board, ColorEnum.WHITE));
-		placeNewPiece('e', 8, new King(board, ColorEnum.BLACK));
-		placeNewPiece('e', 1, new King(board, ColorEnum.WHITE));
-//		board.placePiece(new Rook(board, ColorEnum.WHITE), new Position(2, 1));
-//		board.placePiece(new Rook(board, ColorEnum.WHITE), new Position(2, 1));
-//		board.placePiece(new King(board, ColorEnum.BLACK), new Position(0, 4));
-//		board.placePiece(new King(board, ColorEnum.WHITE), new Position(7, 4));
+		placeNewPiece('c', 1, new Rook(board, ColorEnum.WHITE));
+        placeNewPiece('c', 2, new Rook(board, ColorEnum.WHITE));
+        placeNewPiece('d', 2, new Rook(board, ColorEnum.WHITE));
+        placeNewPiece('e', 2, new Rook(board, ColorEnum.WHITE));
+        placeNewPiece('e', 1, new Rook(board, ColorEnum.WHITE));
+        placeNewPiece('d', 1, new King(board, ColorEnum.WHITE));
+
+        placeNewPiece('c', 7, new Rook(board, ColorEnum.BLACK));
+        placeNewPiece('c', 8, new Rook(board, ColorEnum.BLACK));
+        placeNewPiece('d', 7, new Rook(board, ColorEnum.BLACK));
+        placeNewPiece('e', 7, new Rook(board, ColorEnum.BLACK));
+        placeNewPiece('e', 8, new Rook(board, ColorEnum.BLACK));
+        placeNewPiece('d', 8, new King(board, ColorEnum.BLACK));
 	}
 }
 
